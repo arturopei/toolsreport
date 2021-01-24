@@ -1,4 +1,4 @@
-{ "baseUrl": "http://localhost:8080",
+{ "baseUrl": "http://https://qa.otrplus.mercedes-benz.com.cn/",
   "integrationFolder": "cypress/integration",
   "testFiles": "**/*.spec.js",
   "video": false,
