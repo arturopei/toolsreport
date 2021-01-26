@@ -25,20 +25,20 @@
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 const userLogin = Cypress.env("userLogin");
 
-//Cypress.Commands.add("login", () => {
-//  cy.request({
-//    method: "POST",
-//    url: "/user/login",
-//    body: {
-//      username: userLogin.username,
-//      password: userLogin.password
-//    }
-//    // headers: {
-//    //   'xxx': xxx
-//    // }
-//  }).then(res => {
-//    cy.setCookie(userLogin.sessionCookieName);
-//    // res.headers.token = 'xxx'
-//    // cy.setCookie(userLogin.sessionCookieName + window.location.port, res.headers.token)
-//  });
-//});
+Cypress.Commands.add("login", () => {
+  cy.request({
+    method: "POST",
+    url: "/user/login",
+    body: {
+      username: userLogin.username,
+      password: userLogin.password
+    }
+    // headers: {
+    //   'xxx': xxx
+    // }
+  }).then(res => {
+    cy.setCookie(userLogin.sessionCookieName);
+    // res.headers.token = 'xxx'
+    // cy.setCookie(userLogin.sessionCookieName + window.location.port, res.headers.token)
+  });
+});
