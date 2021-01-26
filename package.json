@@ -8,8 +8,7 @@
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "cypress:open": "cypress open",
-    "cypress": "cypress run --headless",
-    "test": "start-server-and-test serve http://localhost:8081 cypress"
+    "cypress": "cypress run --headless"
   },
   "dependencies": {
     "axios": "^0.21.1",
